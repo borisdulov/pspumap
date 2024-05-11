@@ -5,21 +5,25 @@ import { Suspense } from 'react'
 
 import MyOrbitControls from './components/MyOrbitControls'
 import Experience from './components/Experience'
+import TopBar from './components/TopBar'
 
 export default function App() {
   return (
     <div className='App'>
-      <Canvas>
+      
+      <Canvas className='Canvas'>
         <MyOrbitControls />
         <PerspectiveCamera makeDefault position={[-100, 100, -100]} fov={50} />
 
-        <ambientLight intensity={2}/>
-        <directionalLight intensity={3} position={[0, 100, 100]} />
+        <fog attach='fog' args={['#ffffff', 300, 600]} />
 
         <Suspense>
           <Experience />
         </Suspense>
       </Canvas>
+
+      <TopBar />
+      
     </div>
   )
 }

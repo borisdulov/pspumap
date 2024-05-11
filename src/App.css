@@ -1,14 +1,36 @@
-* {
-  height: 100%;
-  width: 100%;
-  margin: 0%;
-  padding: 0%;
+.App {
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background-color: white;
   background-image: url(https://media.tenor.com/xDZkQ6ALTmIAAAAi/loading-snake-io.gif);
   background-size: 5%;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: purple;
+  box-shadow: 0 -200px 200px -50px tomato inset;
+  animation: background 10s infinite;
+  font-family: "Rubik", sans-serif;;
+}
+
+@keyframes background {
+  50% {
+    background: tomato;
+    box-shadow: 0 -200px 200px -50px purple inset;
+  }
 }
