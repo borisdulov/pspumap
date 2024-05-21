@@ -1,0 +1,39 @@
+.floor-selector {
+  display: flex;
+  position: fixed;
+  top: calc(80vh - 70px);
+  left: 50vw;
+  transform: translate(-50%, 0);
+  background: white;
+  border-radius: 20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: lightgray;
+  width: 90vw;
+  justify-content: center;
+}
+
+.floor-button {
+  margin: 5px;
+  float: left;
+  text-decoration: none;
+  color: blueviolet;
+  border-radius: 10px;
+  border-width: 5px;
+  border-color: darkgray;
+  font-family: "Rubik", sans-serif;
+  height: 50px;
+  width: 50px;
+  border-style: dashed;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floor-button.selected {
+  color: white;
+  border-style: solid;
+  border-color: blueviolet;
+  background-color: blueviolet;
+}

@@ -1,0 +1,45 @@
+.panel {
+  position: fixed;
+  width: 90vw;
+  height: 80vh;
+  left: 50vw;
+  top: 80vh;
+  background: white;
+  border-color: blueviolet;
+  border-width: 5px;
+  border-style: dotted;
+  border-radius: 20px;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  overflow: hidden;
+  transition: top 0.5s ease-out;
+}
+
+.panel.closed {
+  top: 80vh;
+}
+
+.panel.open {
+  top: 10vh;
+}
+
+.panel-button {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  width: 290px;
+  height: 50px;
+  background-color: blueviolet;
+  border-style: solid;
+  border-color: blueviolet;
+  border-width: 5px;
+  border-radius: 10px;
+  transform: translate(-50%, 0);
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

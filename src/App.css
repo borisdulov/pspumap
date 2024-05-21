@@ -11,26 +11,28 @@ body {
   background-size: 5%;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 
-.top-bar {
+.scene {
   position: fixed;
-  top: 0px;
+  top: 0;
+  left: 0;
   width: 100vw;
-  height: 40px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: purple;
-  box-shadow: 0 -200px 200px -50px tomato inset;
-  animation: background 10s infinite;
-  font-family: "Rubik", sans-serif;;
+  height: 100vh;
 }
 
-@keyframes background {
-  50% {
-    background: tomato;
-    box-shadow: 0 -200px 200px -50px purple inset;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: purple;
+  box-shadow: 0 -200px 200px -50px tomato inset;
+  animation: header-animation 10s infinite;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+/* анимация переливания градиента */
+@keyframes header-animation {
+  50% {
+    background: tomato;
+    box-shadow: 0 -200px 200px -50px blueviolet inset;
+  }
+}
