@@ -7,17 +7,20 @@ import SlidePanel from './components/ui/slidePanel/SlidePanel'
 
 export default function App() {
   const [currentFloor, setFloor] = useState(1)
-  console.log(currentFloor)
+  const [panoName, setPanoName] = useState('')
+  const [isPanelOpen, setIsPanelOpen] = useState(false)
 
-  const floorSelectHandler = (floor) => {
-    setFloor(floor)
+  function openPano(panoName) {
+    setPanoName(panoName)
+    setIsPanelOpen(true)
+    console.log(isPanelOpen)
   }
 
   return (
     <div className='App'>
-      <MyScene floorToDraw={currentFloor}/>
-      <FloorSelector selectFloor={floorSelectHandler} selectedFloor={currentFloor} />
-      <SlidePanel />
+      <MyScene currentFloor={currentFloor} openPano={openPano}/>
+      <FloorSelector setFloor={setFloor} currentFloor={currentFloor} />
+      <SlidePanel isPanelOpen={isPanelOpen} panoName={panoName} setIsPanelOpen={setIsPanelOpen}/>
       <Header />
     </div>
   )

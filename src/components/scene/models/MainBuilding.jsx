@@ -2,13 +2,13 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 import { MeshNormalMaterial } from 'three'
 
-export function MainBuilding({ floorToDraw }) {
+export function MainBuilding({ currentFloor }) {
   const { nodes } = useGLTF('/pspu.glb');
-  console.log(floorToDraw)
+
   return (
     <group dispose={null}>
       {
-        floorToDraw === 1
+        currentFloor === 1
           ? <>
               <mesh
                 geometry={nodes.first_walls.geometry}
