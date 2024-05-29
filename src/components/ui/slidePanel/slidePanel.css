@@ -41,6 +41,12 @@
   justify-content: center;
   z-index: 3;
   cursor: pointer;
+  transition: bottom 0.5s ease-out;
+  -webkit-transition: bottom 0.5s ease-out;
+}
+
+.panel-button.hidden {
+  bottom: -100px;
 }
 
 .pano {

@@ -4,8 +4,8 @@ import { PerspectiveCamera } from '@react-three/drei'
 import { Suspense } from 'react'
 import { BackgroundModel } from './models/BackgroundModel'
 import { MainBuilding } from './models/MainBuilding'
-import { VerticalIcons } from './sceneIcons/verticalIcons/VerticalIcons'
-import SceneIcons from './sceneIcons/SceneIcons'
+import Sections from './Sections'
+import { TextIcons } from './icons/Icons'
 
 export default function MyScene({ currentFloor, openPano }) {
   return (
@@ -19,7 +19,8 @@ export default function MyScene({ currentFloor, openPano }) {
         <Suspense>
           <BackgroundModel />
           <MainBuilding currentFloor={currentFloor} />
-          <SceneIcons currentFloor={currentFloor} openPano={openPano}/>
+          <TextIcons currentFloor={currentFloor} openPano={openPano}/>
+          <Sections />
         </Suspense>
       </Canvas>
     </div>

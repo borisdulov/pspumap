@@ -1,5 +1,5 @@
 import './App.css'
-import { useState } from 'react'
+import { Suspense, useState } from 'react'
 import Header from './components/ui/header/Header'
 import FloorSelector from './components/ui/floorSelector/FloorSelector'
 import MyScene from './components/scene/MyScene'
@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <div className='App'>
-      <MyScene currentFloor={currentFloor} openPano={openPano}/>
+      <MyScene currentFloor={currentFloor} openPano={openPano} />
       <FloorSelector setFloor={setFloor} currentFloor={currentFloor} />
       <SlidePanel isPanelOpen={isPanelOpen} panoName={panoName} setIsPanelOpen={setIsPanelOpen}/>
       <Header />

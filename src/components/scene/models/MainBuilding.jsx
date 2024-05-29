@@ -5,26 +5,33 @@ import { MeshNormalMaterial } from 'three'
 export function MainBuilding({ currentFloor }) {
   const { nodes } = useGLTF('/pspu.glb');
 
+  const underFloor = <>
+    <mesh geometry={nodes.u_walls.geometry} material={new MeshNormalMaterial()}/>
+    <mesh geometry={nodes.u_ground.geometry} material={new MeshNormalMaterial()}/></>
+
+  const firstFloor = <>
+    <mesh geometry={nodes.g_walls.geometry} material={new MeshNormalMaterial()}/>
+    <mesh geometry={nodes.g_ground.geometry} material={new MeshNormalMaterial()}/></>
+
+  const secondFloor = <>
+    <mesh geometry={nodes.s_walls.geometry} material={new MeshNormalMaterial()}/>
+    <mesh geometry={nodes.s_ground.geometry} material={new MeshNormalMaterial()}/></>
+
+  const thirdFloor = <>
+    <mesh geometry={nodes.t_walls.geometry} material={new MeshNormalMaterial()}/>
+    <mesh geometry={nodes.t_ground.geometry} material={new MeshNormalMaterial()}/></>
+
+  const fourthFloor = <>
+    <mesh geometry={nodes.f_walls.geometry} material={new MeshNormalMaterial()}/>
+    <mesh geometry={nodes.f_ground.geometry} material={new MeshNormalMaterial()}/></>
+
   return (
     <group dispose={null}>
-      {
-        currentFloor === 1
-          ? <>
-              <mesh
-                geometry={nodes.first_walls.geometry}
-                material={new MeshNormalMaterial()}
-                position={nodes.first_walls.position}
-                rotation={nodes.first_walls.rotation}
-                scale={nodes.first_walls.scale} />
-              <mesh
-                geometry={nodes.first_walls_A.geometry}
-                material={new MeshNormalMaterial()}
-                position={nodes.first_walls_A.position}
-                rotation={nodes.first_walls_A.rotation}
-                scale={nodes.first_walls_A.scale} />
-            </>
-          : null
-      }
+      {currentFloor === 0 ? underFloor : null}
+      {currentFloor === 1 ? firstFloor : null}
+      {currentFloor === 2 ? secondFloor : null}
+      {currentFloor === 3 ? thirdFloor : null}
+      {currentFloor === 4 ? fourthFloor : null}
     </group>
   )
 }

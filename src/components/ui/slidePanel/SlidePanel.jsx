@@ -9,8 +9,10 @@ export default function SlidePanel({ isPanelOpen, panoName, setIsPanelOpen }) {
     <>
       <div className={`panel ${isPanelOpen ? 'open' : 'closed'}`}>
         <MyPanorama panoName={panoName}/>
-        <button className="panel-button" onClick={() => setIsPanelOpen(false)}>Close panorama view</button>
       </div>
+      <button
+        className={`panel-button ${isPanelOpen ? 'active' : 'hidden'}`}
+        onClick={() => setIsPanelOpen(false)}>Close</button>
     </>
   )
 }
