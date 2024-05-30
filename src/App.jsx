@@ -7,7 +7,7 @@ import SlidePanel from './components/ui/slidePanel/SlidePanel'
 
 export default function App() {
   const [currentFloor, setFloor] = useState(1)
-  const [panoName, setPanoName] = useState('left')
+  const [panoName, setPanoName] = useState('')
   const [isPanelOpen, setIsPanelOpen] = useState(false)
 
   function openPano(panoName) {

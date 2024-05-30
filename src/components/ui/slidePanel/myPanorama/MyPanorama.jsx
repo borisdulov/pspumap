@@ -5,7 +5,7 @@ const MyPanorama = ({ panoName }) => {
     <div className='pano'>
       <Pannellum
         image={'/' + panoName + '.png'}
-        hfov={170 * (window.innerWidth / window.innerHeight / 2)}
+        hfov={2500 / innerHeight * innerWidth ** 0.5}
         autoLoad={true}
         mouseZoom={true}
         height="100%"
