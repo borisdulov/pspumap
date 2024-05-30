@@ -10,14 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@photo-sphere-viewer/core": "^5.7.4",
     "@react-three/drei": "^9.105.6",
     "@react-three/fiber": "^8.16.5",
     "@types/three": "^0.164.0",
     "pannellum": "^2.5.6",
-    "pannellum-react": "^1.2.4",
     "panolens": "^0.12.1",
     "react": "^18.3.1",
     "react-dom": "^18.2.0",
+    "react-photo-sphere-viewer": "^5.0.2-psv5.7.1",
     "react-snap-scroll": "^0.0.5",
     "three": "^0.164.1"
   },
