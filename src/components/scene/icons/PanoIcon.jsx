@@ -12,7 +12,8 @@ export function PanoIcon(position, switchPano, key) {
       onClick={() => switchPano()}>
         <meshBasicMaterial
           map={texture}
-          transparent={true}/>
+          transparent={true}
+          depthTest={false}/>
       </Plane>
     </Billboard>
   )

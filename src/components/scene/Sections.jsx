@@ -1,8 +1,24 @@
 import { Text } from "@react-three/drei";
 import { FrontSide } from "three";
-import { MeshBasicMaterial, MeshStandardMaterial } from 'three'
+import { MeshBasicMaterial } from 'three'
 
-const Sections = () => {
+const Sections = ({ currentFloor }) => {
+  if (currentFloor === 0) {
+    return (
+      <Text
+        size={10}
+        outlineColor={'gray'}
+        outlineWidth={0.1}
+        position={[0, -5, -40]}
+        scale={7}
+        rotation={[0, Math.PI, 0]}
+        material={new MeshBasicMaterial({
+          side: FrontSide
+        })}>
+        Underground
+      </Text>
+    )
+  }
   return (
     <group dispose={null}>
       <Text

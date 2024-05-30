@@ -10,8 +10,8 @@ export function MainBuilding({ currentFloor }) {
     <mesh geometry={nodes.u_ground.geometry} material={new MeshNormalMaterial()}/></>
 
   const firstFloor = <>
-    <mesh geometry={nodes.g_walls.geometry} material={new MeshNormalMaterial()}/>
-    <mesh geometry={nodes.g_ground.geometry} material={new MeshNormalMaterial()}/></>
+    <mesh geometry={nodes.g_ground.geometry} material={new MeshNormalMaterial()}/>
+    <mesh geometry={nodes.g_walls.geometry} material={new MeshNormalMaterial()}/></>
 
   const secondFloor = <>
     <mesh geometry={nodes.s_walls.geometry} material={new MeshNormalMaterial()}/>

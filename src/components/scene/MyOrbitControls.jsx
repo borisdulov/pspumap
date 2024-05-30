@@ -23,8 +23,8 @@ export default function MyOrbitControls() {
   return (
     <OrbitControls
       ref={orbitControlsRef}
-      minPolarAngle={Math.PI / 6}
-      maxPolarAngle={Math.PI - Math.PI / 1.9}
+      minPolarAngle={0}
+      maxPolarAngle={Math.PI - Math.PI / 1.5}
       minDistance={50}
       maxDistance={200}
       enablePan={true}

@@ -20,7 +20,7 @@ export default function MyScene({ currentFloor, openPano }) {
           <BackgroundModel />
           <MainBuilding currentFloor={currentFloor} />
           <TextIcons currentFloor={currentFloor} openPano={openPano}/>
-          <Sections />
+          <Sections currentFloor={currentFloor}/>
         </Suspense>
       </Canvas>
     </div>
