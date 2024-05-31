@@ -215,11 +215,11 @@ export function TextIcons({ currentFloor, openPano }) {
 
   return (
     <group dispose={null}>
-      {
-        currentFloor === 1
-          ? firstFloorIcons
-          : null
-      }
+      {currentFloor === 1 ? firstFloorIcons : null}
+      {currentFloor === 2 ? secondFloorIcons : null}
+      {currentFloor === 3 ? thirdFloorIcons : null}
+      {currentFloor === 4 ? fourthFloorIcons : null}
+      {currentFloor === 0 ? undergroundIcons : null}
     </group>
   )
 }
