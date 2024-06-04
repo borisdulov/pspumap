@@ -35,20 +35,15 @@ export function Icons({ currentFloor, openPano }) {
           index
         )
       );
+    } else if ('behmswzx'.includes(node.name[1])) {
+      floorIcons[floor].push(
+        ImageIcon(
+          [node.position.x, node.position.y, node.position.z],
+          '/' + node.name[1] + '.png',
+          index
+        )
+      );
     }
-    // else {
-    //   try {
-    //     floorIcons[floor].push(
-    //       ImageIcon(
-    //         [node.position.x, node.position.y, node.position.z],
-    //         '/' + node.name[1] + '.png',
-    //         index
-    //       )
-    //     );
-    //   } catch (error) {
-    //     return;
-    //   }
-    // }
   });
 
   function getFloorFromNodeName(name) {
