@@ -1,5 +1,4 @@
-import React, { useRef } from 'react'
-import { Plane, Billboard, Text, Text3D } from '@react-three/drei'
+import { Text } from '@react-three/drei'
 
 export function TextIcon(position, rotation, text, key) {
   return (
@@ -12,7 +11,7 @@ export function TextIcon(position, rotation, text, key) {
         outlineWidth={0.5}
         key={key}
         rotation={rotation}>
-        {text}
+        {text.replace(/_/g, '  ').slice(3)}
       </Text>
   )
 }

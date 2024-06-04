@@ -5,7 +5,7 @@ import { Suspense } from 'react'
 import { BackgroundModel } from './models/BackgroundModel'
 import { MainBuilding } from './models/MainBuilding'
 import Sections from './Sections'
-import { TextIcons } from './icons/Icons'
+import { Icons } from './icons/Icons'
 
 export default function MyScene({ currentFloor, openPano }) {
   return (
@@ -19,7 +19,7 @@ export default function MyScene({ currentFloor, openPano }) {
         <Suspense>
           <BackgroundModel />
           <MainBuilding currentFloor={currentFloor} />
-          <TextIcons currentFloor={currentFloor} openPano={openPano}/>
+          <Icons currentFloor={currentFloor} openPano={openPano}/>
           <Sections currentFloor={currentFloor}/>
         </Suspense>
       </Canvas>

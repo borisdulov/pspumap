@@ -3,6 +3,7 @@ import { Plane, Billboard} from '@react-three/drei'
 import { useTexture } from '@react-three/drei'
 
 export function ImageIcon(position, imagePath, key) {
+  console.log(imagePath)
   const texture = useTexture(imagePath);
 
   return (
