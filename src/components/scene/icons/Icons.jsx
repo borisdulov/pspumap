@@ -35,20 +35,20 @@ export function Icons({ currentFloor, openPano }) {
           index
         )
       );
-    } else {
-      console.log(node.name)
-      try {
-        floorIcons[floor].push(
-          ImageIcon(
-            [node.position.x, node.position.y, node.position.z],
-            '/' + node.name[1] + '.png',
-            index
-          )
-        );
-      } catch (error) {
-        return;
-      }
     }
+    // else {
+    //   try {
+    //     floorIcons[floor].push(
+    //       ImageIcon(
+    //         [node.position.x, node.position.y, node.position.z],
+    //         '/' + node.name[1] + '.png',
+    //         index
+    //       )
+    //     );
+    //   } catch (error) {
+    //     return;
+    //   }
+    // }
   });
 
   function getFloorFromNodeName(name) {
