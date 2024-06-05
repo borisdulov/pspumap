@@ -8,7 +8,7 @@ export function PanoIcon(position, switchPano, key) {
   return (
     <Billboard position={position} key={key}>
       <Plane
-      args={[7, 7]}
+      args={[5, 5]}
       onClick={() => switchPano()}>
         <meshBasicMaterial
           map={texture}

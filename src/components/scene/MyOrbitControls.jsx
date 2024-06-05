@@ -26,7 +26,7 @@ export default function MyOrbitControls() {
       enablePan={true}
       panSpeed={1}
       minZoom={30}
-      maxZoom={500}
+      maxZoom={200}
     />
   )
 }
