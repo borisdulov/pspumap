@@ -15,7 +15,7 @@ export default function MyScene({ currentFloor, openPano }) {
         <ambientLight intensity={2}/>
         <directionalLight intensity={10} position={[-100, 200, 100]} />
         <Suspense>
-          <group scale={0.1} position={[0, 2, 0]}>
+          <group scale={0.1} position={[0, 2, 3]}>
             <BackgroundModel />
             <MainBuilding currentFloor={currentFloor} />
             <Icons currentFloor={currentFloor} openPano={openPano}/>
