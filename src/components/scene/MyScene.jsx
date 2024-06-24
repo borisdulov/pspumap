@@ -5,6 +5,7 @@ import { BackgroundModel } from './models/BackgroundModel'
 import { MainBuilding } from './models/MainBuilding'
 import Sections from './Sections'
 import { Icons } from './icons/Icons'
+import { Text } from "@react-three/drei";
 
 export default function MyScene({ currentFloor, openPano }) {
   return (
