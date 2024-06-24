@@ -35,6 +35,13 @@ export default function MyScene({ currentFloor, openPano }) {
               rotation={[Math.PI, Math.PI, Math.PI]}>
               With help of Kanov Roman, Rangulov Niyaz, Maskov Ilya, Ejov Maksim
             </Text>
+            <Text
+              color={"grey"}
+              position={[49, 7, 9]}
+              scale={3}
+              rotation={[Math.PI/2, Math.PI, 0]}>
+              Click on red pin📍icons to open panoramas
+            </Text>
           </group>
         </Suspense>
       </Canvas>
