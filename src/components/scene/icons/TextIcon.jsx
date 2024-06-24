@@ -6,7 +6,7 @@ export function TextIcon(position, rotation, text, key) {
         fontSize={2}
         color={'white'}
         position={position}
-        fontWeight={800}
+        fontWeight={900}
         outlineColor={'black'}
         outlineWidth={0.5}
         key={key}
