@@ -20,6 +20,20 @@ export default function MyScene({ currentFloor, openPano }) {
             <MainBuilding currentFloor={currentFloor} />
             <Icons currentFloor={currentFloor} openPano={openPano}/>
             <Sections currentFloor={currentFloor}/>
+            <Text
+              color={"grey"}
+              position={[0, 20, 183]}
+              scale={5}
+              rotation={[Math.PI, Math.PI, Math.PI]}>
+              Created by Dulov Boris
+            </Text>
+            <Text
+              color={"grey"}
+              position={[0, 10, 184]}
+              scale={3}
+              rotation={[Math.PI, Math.PI, Math.PI]}>
+              With help of Kanov Roman, Rangulov Niyaz, Maskov Ilya, Ejov Maksim
+            </Text>
           </group>
         </Suspense>
       </Canvas>
